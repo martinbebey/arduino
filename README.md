@@ -1,2 +1,0 @@
-# arduino
-sample arduino projects
