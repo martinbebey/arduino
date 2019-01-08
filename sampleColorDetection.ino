@@ -30,7 +30,7 @@ void loop() {
   // Reading the output frequency
   Rfrequency = pulseIn(sensorOut, LOW);
   //Remaping the value of the frequency to the RGB Model of 0 to 255
-  Rfrequency = map(Rfrequency, 25,72,255,0);
+  //Rfrequency = map(Rfrequency, 18,237,255,0);
   // Printing the value on the serial monitor
   Serial.print("R= ");//printing name
   Serial.print(Rfrequency);//printing RED color frequency
@@ -43,7 +43,7 @@ void loop() {
   // Reading the output frequency
   Gfrequency = pulseIn(sensorOut, LOW);
   //Remaping the value of the frequency to the RGB Model of 0 to 255
-  Gfrequency = map(Gfrequency, 30,90,255,0);
+  //Gfrequency = map(Gfrequency, 30,268,255,0);
   // Printing the value on the serial monitor
   Serial.print("G= ");//printing name
   Serial.print(Gfrequency);//printing RED color frequency
@@ -56,7 +56,7 @@ void loop() {
   // Reading the output frequency
   Bfrequency = pulseIn(sensorOut, LOW);
   //Remaping the value of the frequency to the RGB Model of 0 to 255
-  Bfrequency = map(Bfrequency, 25,70,255,0);
+  //Bfrequency = map(Bfrequency, 23,201,255,0);
   // Printing the value on the serial monitor
   Serial.print("B= ");//printing name
   Serial.print(Bfrequency);//printing RED color frequency
