@@ -60,26 +60,28 @@ void loop() {
   // Printing the value on the serial monitor
   Serial.print("B= ");//printing name
   Serial.print(Bfrequency);//printing RED color frequency
-  if(Rfrequency < Bfrequency && Rfrequency < Gfrequency)
-  {
-      Serial.print(" --RED DETECTED--");//printing color name
-  }
-  else if(Bfrequency < Rfrequency && Bfrequency < Gfrequency)
-  {
-    Serial.print(" --BLUE DETECTED--");//printing color name
-  }
-  else if(Gfrequency < Rfrequency && Gfrequency < Bfrequency)
-  {
-    Serial.print(" --GREEN DETECTED--");//printing color name
-  }
-   else if(Gfrequency == Rfrequency && Gfrequency == Bfrequency)
-  {
-    Serial.print(" --WHITE DETECTED--");//printing color name
-  }
-  else
-  {
-    Serial.print(" --NO COLOR DETECTED--");
-  }
-  Serial.println("  ");
+//  if(Rfrequency < Bfrequency && Rfrequency < Gfrequency)
+//  {
+//      Serial.print(" --RED DETECTED--");//printing color name
+//  }
+//  else if(Bfrequency < Rfrequency && Bfrequency < Gfrequency)
+//  {
+//    Serial.print(" --BLUE DETECTED--");//printing color name
+//  }
+//  else if(Gfrequency < Rfrequency && Gfrequency < Bfrequency)
+//  {
+//    Serial.print(" --GREEN DETECTED--");//printing color name
+//  }
+//   else if(Gfrequency == Rfrequency && Gfrequency == Bfrequency)
+//  {
+//    Serial.print(" --WHITE DETECTED--");//printing color name
+//  }
+//  else
+//  {
+//    Serial.print(" --NO COLOR DETECTED--");
+//  }
+  Serial.print("The overall colour is= ");
+  Serial.print("The overall colour is= ");
+  Serial.println((Bfrequency + Gfrequency + Rfrequency) / 3);
   delay(100);
 }
